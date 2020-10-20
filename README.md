@@ -79,34 +79,47 @@ Babel compiles to ES5.
 TypeScript can compile to several different ECMAScript standards.
 
 `$ npm init`
+
 `$ npm install --save gulp`
+
 `$ touch gulpfile.js`
+
 `$ npm install --save-dev @babel/core @babel/preset-env gulp-babel`
+
 Add to package.json after "dependencies" and "devDependencies":
 ```  
 "presets": [
     "@babel/preset-env"
 ],
 ```
+
 `$ touch .babelrc`
-Add to .babelrc
-`{
+
+Add to .babelrc:
+```
+{
   "presets": ["@babel/preset-env"]
 }
-`
+```
 Rename "gulpfile.js" file to "gulpfile.babel.js"
+
 `$ npm i --save-dev eslint@latest`
+
 `$ ./node_modules/.bin/eslint --init`
 
 `$npm install --save-dev typescript gulp-typescript`
-Add script to run gulp task runner
+
+Add script to run gulp task runner:
 ```
 "scripts": {
   ... ,
   "babelTest": "gulp babelTest"
 },
 ```
+
 `$ touch tsconfig.json`
+
+Notes:
 TypeScript compiles to set value using `--target` tag or `-t`. "ES3" is default.
 - "ES3" (default)
 - "ES5"
@@ -117,3 +130,7 @@ TypeScript compiles to set value using `--target` tag or `-t`. "ES3" is default.
 - "ES2019"
 - "ES2020"
 - "ESNext" - targets latest supported ES proposed features.
+
+https://www.typescriptlang.org/docs/handbook/gulp.html
+https://www.typescriptlang.org/docs/handbook/compiler-options.html
+https://medium.com/@sudoanushil/use-es6-babel-with-gulp-5c7951592c29
