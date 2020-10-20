@@ -1,0 +1,48 @@
+{
+  "name": "js-class-tests",
+  "version": "1.0.0",
+  "description": "A comparison of classes created by TS and ES6+, and their transpilations",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "chokidar": "^3.4.3",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^4.0.3"
+  },
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "gulp transpileAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/COScholl/JS-class-tests.git"
+  },
+  "keywords": [
+    "gulp",
+    "babel",
+    "TypeScript",
+    "ECMAScript",
+    "class",
+    "JavaScript"
+  ],
+  "author": "COScholl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/COScholl/JS-class-tests/issues"
+  },
+  "homepage": "https://github.com/COScholl/JS-class-tests#readme"
+}

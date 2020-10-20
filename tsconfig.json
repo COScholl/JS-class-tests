@@ -1,0 +1,9 @@
+{
+  "files": [
+    "src/typescript/typeScriptClassDeclaration.ts"
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "ES3"
+  }
+}
